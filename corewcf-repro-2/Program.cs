@@ -11,8 +11,7 @@ namespace corewcf_repro_1
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
-                        .ConfigureKestrel(options => options.AllowSynchronousIO = true);
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
